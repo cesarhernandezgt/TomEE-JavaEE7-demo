@@ -7,6 +7,7 @@
     <groupId>com.blogspot.cesarhernandezgt</groupId>
     <artifactId>javaee-tomee-demo</artifactId>
     <version>1.0.0</version>
+    <packaging>war</packaging>
 
     <repositories>
         <repository>
