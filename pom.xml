@@ -8,5 +8,23 @@
     <artifactId>javaee-tomee-demo</artifactId>
     <version>1.0.0</version>
 
+    <repositories>
+        <repository>
+            <id>apache-m2-snapshot</id>
+            <name>Apache Snapshot Repository</name>
+            <url>https://repository.apache.org/content/groups/snapshots</url>
+        </repository>
+    </repositories>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.openejb</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
 
 </project>
