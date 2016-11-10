@@ -35,14 +35,14 @@ public class DrumStoreResource {
 
     @Path("bestseller")
     @GET
-    @Produces(MediaType.APPLICATION_XML)
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Drum bestSeller(){
         return ctl.getCatalog().get(0);
     }
 
     @Path("catalog")
     @GET
-    @Produces(MediaType.APPLICATION_XML)
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public List<Drum> catalog(){
         return ctl.getCatalog();
     }
