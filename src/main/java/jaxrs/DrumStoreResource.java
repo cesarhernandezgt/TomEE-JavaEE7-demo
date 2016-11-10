@@ -7,7 +7,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.Calendar;
 
-
+@Singleton
 @Path("/drums")
 public class DrumStoreResource {
 
@@ -18,7 +18,7 @@ public class DrumStoreResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hi(){
-        return "Hello World from JAX-WS. "+ Calendar.getInstance().getTime();
+        return "Hello World from Singlenton JAX-WS. "+ Calendar.getInstance().getTime();
     }
 
 }
