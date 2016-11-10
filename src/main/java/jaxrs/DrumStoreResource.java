@@ -1,5 +1,6 @@
 package jaxrs;
 
+import jaxb.Drum;
 import javax.ejb.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -21,4 +22,8 @@ public class DrumStoreResource {
         return "Hello World from Singlenton JAX-WS. "+ Calendar.getInstance().getTime();
     }
 
+    @Path("drumTemplate")
+    @GET
+    @Produces(MediaType.APPLICATION_XML)
+    public Drum drumTemplate(){ return new Drum(); }
 }
