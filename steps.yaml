@@ -1,0 +1,12 @@
+1. Create an empty maven project
+2. Add to the  Pom.xml the Apache m2  repo and JAVA EE dependency as provided.
+3. Create a jaxws package || Pojo DrumStoreWs.java || JAXWS web service from  Pojo (jar one!) (1-jaxws-soapui-project.xml)
+4. jaxrs package || RestApplication.java || Pojo DrumStoreResource.java || WEB-INF/web.xml || Pom packaging to war
+5. Activate CDI || beans.xml || singlenton jaxrs resource
+6. jaxb package || Pojo Drum.java || add a drumTemplate method in jaxrs and jaxws (2-jaxb-soapui-project.xml)
+7. ejb package || EJB Singlenton CatalogBean.java || inject EJB into jaxrs and jaxws (3-ejb-soapui-project.xml)
+8. JSON-P for jaxrs resource.
+9. Servlet 3.1 with setContentLengthLong method (https://docs.oracle.com/javaee/7/api/javax/servlet/ServletResponse.html#setContentLengthLong-long-)
+10. websocket package || aWebSocket.java || testWebSocket.jsp || (http://localhost:8080/javaee-tomee-demo-1.0.0/websockettest.jsp)
+11. TimerService.java || Automatic Scheduled
+12. package jbatch, job || resources/META-INF/batch-jobs and mydata.csv || jsf/web.xml/model/service/facesconfig/batch.xhtml/result.xhtml || http://localhost:8080/javaee-tomee-demo-1.0.0/
