@@ -25,6 +25,17 @@
             <version>7.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.batchee</groupId>
+            <artifactId>batchee-jbatch</artifactId>
+            <version>0.2-incubating</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.batchee</groupId>
+            <artifactId>batchee-extras</artifactId>
+            <version>0.2-incubating</version>
+        </dependency>
     </dependencies>
 
 
