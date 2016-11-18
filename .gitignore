@@ -1,0 +1,7 @@
+
+.idea/*
+*.iml
+steps.yaml
+target/*
+soap-ui-projects/*
+build.sh
