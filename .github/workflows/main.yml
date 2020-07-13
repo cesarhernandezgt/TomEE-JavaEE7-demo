@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-18.04
 
     steps:
     - uses: actions/checkout@v2
@@ -20,6 +20,9 @@ jobs:
       uses: joschi/setup-jdk@v2
       with:
         java-version: '8'
+    
+    - name: list maven configuration
+      run: ls -al %M2_HOME%\conf
     
     - name: Build with Maven
       run: mvn clean install
